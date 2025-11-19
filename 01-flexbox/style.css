@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(252, 170, 71);
+    color: white;
+
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.box{
+ background-color: blue;
+ border: 3px solid black;
+ height: 10rem;
+ width: 10rem;
+}
+
+.box.red{
+ background-color: red;
+
+}
+
+.box.yellow{
+    background-color: yellow;
+    height: 20rem;
+
+
+}
+
+.box.blue{
+    background-color:blue;
+    height: 15rem;
+}

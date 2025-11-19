@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(83, 83, 83);
+}
+
+.pai{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colunas */
+  grid-template-rows: 100px 1fr 100px 100px 100px 100px 100px; /* 4 linhas */
+
+  grid-template-areas:
+    "filhos1 filhos2 filhos2 filhos2"
+    "filhos1 filhos3 filhos3 filhos3"
+    "filhos5 filhos5 filhos5 filhos7"
+    "filhos5 filhos5 filhos5 filhos7"
+    "filhos4 filhos4 filhos4 filhos7"
+    "filhos4 filhos4 filhos4 filhos7"
+    "filhos6 filhos6 filhos6 filhos6"
+    "filhos6 filhos6 filhos6 filhos6";
+  
+}
+
+.filhos1{
+    background-color: aqua;
+    grid-area: filhos1;
+
+}
+
+
+.filhos2{
+    background-color: beige;
+    grid-area: filhos2;
+}
+
+
+.filhos3{
+    background-color: blue;
+    grid-area: filhos3;
+}
+
+
+.filhos4{
+    background-color: brown;
+    grid-area: filhos4;
+}
+
+
+.filhos5{
+    background-color: rgb(42, 165, 165);
+    grid-area: filhos5;
+}
+
+
+.filhos6{
+    background-color: blueviolet;
+    grid-area: filhos6;
+}
+
+
+.filhos7{
+    background-color: cadetblue;
+    grid-area: filhos7;
+}

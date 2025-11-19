@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+
+}
+
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galery > img{
+    flex: 3 0 12rem;
+    width: 200px;
+}

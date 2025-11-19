@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(148, 148, 148);
+    color: white;
+    display: grid;
+    place-content: center;/* Ele substitui os dois de baixo*/
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+
+}
+
+.grid-container{
+    background-color: yellowgreen;
+    padding: 1rem;
+    height: 28rem;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 8rem 8rem;
+    grid-template-rows: 8rem 8rem;
+    
+    place-content: center;
+}
+
+.grid-item{
+    background-color: aqua;
+    padding: 1rem;
+}

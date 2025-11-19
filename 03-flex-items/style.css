@@ -1,0 +1,61 @@
+body {
+  background-color: #2c2c2d;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+
+  /* as propriedades são baseadas na direção, ao mudar a direção o comportamento também muda */
+  /* flex-direction: column; */
+  /* height: 32rem; */
+}
+
+.flex-item {
+  width: 10rem;
+  /* flex-grow flex-shrink flex-basis */
+}
+
+.box.red {
+    flex-grow: 1; /* qualquer valor aqui faz com que a caixa cresça o máximo da tela que puder*/
+
+    flex-shrink: 0; /* define um tamanho que nao encolhe que nao diminui, o normal é 1*/
+
+
+    flex-basis: 1; /* defineum tamanho basico na caixa*/
+
+    flex: 1 0 1; /* podemos usar apenas o attchament de flex. o primeiro é o glow, segundo é sherink e tercerio é o basis*/
+
+    /* crescimento, encolhimento e tamanho base*/
+}
+
+.box.yellow {
+  flex-grow: 0; /* valor padrão */
+  flex-shrink: 1; /* valor padrão */
+}
+
+.box.blue {
+  flex: 1 0 10rem;
+}
+
+/* Estilos auxiliares */
+
+.box {
+  background-color: #4547c7;
+  border: 2px solid #272727;
+}
+
+.box.red {
+  background-color: #ff665c;
+}
+
+.box.yellow {
+  background-color: #f9ff58;
+  height: 5rem;
+}
+
+.box.blue {
+  background-color: #5255eb;
+  height: 3rem;
+}

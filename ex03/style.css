@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(110, 110, 110);
+    
+}
+
+.page-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(10rem,20rem) 1fr;
+    margin: auto;
+    max-width: 74rem;
+      
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    grid-column: span 2;
+    grid-row: 1;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid white ;
+}
+
+nav > a{
+    margin: 1rem;
+}
+
+.intro{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+main{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+
+aside{
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+
+aside > li{
+    margin: .4rem 0;
+}
+
+.blog-posts{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.blog-posts > article:first-child{
+    grid-column: span 2;
+
+}
+
+.post img{
+    border-radius: 1rem;
+    height: auto;
+    width: 100%;
+   
+}
+
+
+footer{
+    grid-column:  span 2;
+    grid-row: 4;
+    margin-top: 2rem;
+    border-top: 1px solid white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
